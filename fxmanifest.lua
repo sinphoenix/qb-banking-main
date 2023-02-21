@@ -1,5 +1,6 @@
 fx_version 'cerulean'
 game 'gta5'
+--Merged from SinBanking  SinisterOne#6027  | SinisterNetwork | QBCore Framwork Development Team
 
 description 'QB-ATMS'
 version '1.2.3'
