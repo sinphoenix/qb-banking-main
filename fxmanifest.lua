@@ -5,14 +5,27 @@ game 'gta5'
 description 'QB-ATMS'
 version '1.2.3'
 
-shared_script 'config.lua'
+shared_script {
+    '@qb-core/shared/locale.lua',
+    'locales/en.lua',
+    'locales/*.lua',
+    'config/config.lua'
+}
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
-    'server/main.lua'
+    'server/main.lua',
+    'server/wrappers/business.lua',
+    'server/wrappers/useraccounts.lua',
+    'server/wrappers/gangs.lua'
 }
 
-client_script 'client/main.lua'
+client_script {
+    'client/main.lua',
+    '@PolyZone/client.lua',
+    '@PolyZone/BoxZone.lua',
+    '@PolyZone/ComboZone.lua'
+}
 
 ui_page 'nui/index.html'
 
@@ -27,7 +40,7 @@ files {
     'nui/style.css',
     'nui/index.html',
     'nui/qb-atms.js',
-'nui/qb-banking.js'
+    'nui/qb-banking.js'
 }
 
 lua54 'yes'
