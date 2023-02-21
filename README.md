@@ -1,5 +1,6 @@
-# qb-atms
-Useable ATMs for QB-Core
+# QB-BANKING
+ATMS and BANKING all in one
+-- Merged by SinisterOne#6027
 
 # License
 
